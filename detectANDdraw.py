@@ -112,8 +112,8 @@ def process_text_analysis(bucket, document):
 	return len(blocks)
 
 def main():
-	bucket = 'invoicestc26'
-	document = 'hook_invoice1.PNG'
+	bucket = 'BUCKET_NAME'
+	document = 'DOCUMENT_NAME'
 	block_count=process_text_analysis(bucket,document)
 	print("Blocks detected: " + str(block_count))
 
