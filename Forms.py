@@ -51,8 +51,8 @@ def search_value(kvs,search_key):
 			return value
 
 def main():
-	bucket = 'invoicestc26'
-	document = 'hook_invoice1.PNG'
+	bucket = 'BUCKET_NAME'
+	document = 'DOCUMENT_NAME'
 	s3_connection = boto3.resource('s3')
 	s3_object = s3_connection.Object(bucket,document)
 	s3_response = s3_object.get()
