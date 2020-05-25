@@ -29,8 +29,8 @@ def get_text(result, blocks_map):
 	return text
 
 def main():
-	bucket = 'invoicestc26'
-	document = 'invoice1.PNG'
+	bucket = 'INVOICE_NAME'
+	document = 'DOCUMENT_NAME'
 
 	s3_connection = boto3.resource('s3')
 	s3_object = s3_connection.Object(bucket,document)
